@@ -4,11 +4,14 @@
   --accent-color: #2196f3;
   --accent-white-color: #ffffff;
   --button-bg: #f5f4fa;
+  --footer-bg: #2f303a;
 }
 
 body {
   background: #e5e5e5;
   color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 .page-header {
   background-color: #ffffff;
@@ -17,11 +20,18 @@ body {
 ul {
   list-style: none;
 }
+a {
+  text-decoration: none;
+}
 
 /**Лого**/
 
 .logo {
   color: #000000;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
 }
 
 .logo:hover {
@@ -32,10 +42,18 @@ ul {
   color: var(--accent-color);
 }
 
+footer .logo {
+  color: var(--accent-white-color);
+}
+
 /**Меню**/
 
 .site-nav .link {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link.current {
@@ -48,11 +66,39 @@ ul {
 }
 
 /**Контакты**/
-.contact li:hover {
+.contact .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contact .link:hover,
+.contact .link:focus {
   color: var(--accent-color);
 }
 
+address {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.link.address {
+  color: var(--accent-white-color);
+}
+
 /**Hero**/
+.hero {
+  color: var(--accent-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /**Section**/
 .section-title {
@@ -63,10 +109,18 @@ ul {
 .button {
   background-color: var(--accent-color);
   color: var(--accent-white-color);
+  font-family: inherit;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 .button.primary,
-.button.secondary:hover {
+.button.secondary:hover,
+.button.secondary:focus {
   background-color: var(--accent-color);
   color: var(--accent-white-color);
 }
@@ -74,4 +128,8 @@ ul {
 .button.secondary {
   background-color: var(--button-bg);
   color: var(--title-text-color);
+}
+
+footer {
+  background-color: var(--footer-bg);
 }
