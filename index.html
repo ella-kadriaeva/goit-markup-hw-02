@@ -5,23 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="page-header">
         <nav>
             <!--Логотип-->
-            <a lang="en" href="/"><span>Web</span>Studio</a>
+            <a class="logo" lang="en" href="/"><span>Web</span>Studio</a>
 
             <!--Меню-->
-            <ul>
-                <li><a href="">Студия</a></li>
-                <li><a href="">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
+            <ul class="site-nav">
+                <li><a href="" class="link current">Студия</a></li>
+                <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+                <li><a href="" class="link">Контакты</a></li>
             </ul>
         </nav>
 
         <!--Контакты-->
-        <ul>
+        <ul class="contact">
             <li><a lang="en" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
@@ -30,15 +31,15 @@
 
     <main>
     <!--Баннер-->
-    <section>
+    <section class="hero">
         <h1>Эффективные решения для вашего бизнеса</h1>
-        <button type="button">Заказать услугу</button>
+        <button type="button" class="button primary">Заказать услугу</button>
     </section>
    
 
     <!--Секция Преимущества нашей компании-->
-    <section>
-        <h2>Особенности</h2>
+    <section class="section">
+        <h2 class="section-title">Особенности</h2>
         <ul>
             <li>
                 <h3>Внимание к деталям</h3>
@@ -63,8 +64,8 @@
     </section>
 
     <!--Секция чем мы занимаемся-->
-    <section>
-        <h2>Чем мы занимаемся</h2>
+    <section class="section">
+        <h2 class="section-title">Чем мы занимаемся</h2>
         <ul>
             <li>
                 <img src="./images/box1.jpg" alt="рабочий стол с планшетом и клавиатурой" width="370">
@@ -79,8 +80,8 @@
     </section>
 
     <!--Секция наша команда-->
-    <section>
-        <h2>Наша команда</h2>
+    <section class="section">
+        <h2 class="section-title">Наша команда</h2>
         <ul>
             <li>
                 <img src="./images/card1.jpg" alt="Product Designer" width="270">
