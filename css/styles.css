@@ -10,13 +10,14 @@
 }
 
 body {
-    background: #e5e5e5;
+    background: var(--accent-white-color);
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
     font-size: 14px;
     line-height: 1.71;
 }
+
 .page-header {
     background-color: var(--header-bg);
 }
@@ -84,6 +85,7 @@ address {
 /**Hero**/
 .hero {
     color: var(--accent-white-color);
+    background-color: var(--footer-bg);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -103,6 +105,7 @@ address {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 
 .button.primary,
